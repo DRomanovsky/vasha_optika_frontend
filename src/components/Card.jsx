@@ -5,7 +5,7 @@ const Card = ({goods}) => {
   return (
     <div class="itemCard">
       <div class="cardImage">
-        <img src={process.env.REACT_APP_API_URL + goods.image} alt="cardImage"/>
+        <img src={process.env.REACT_APP_API_URL + '/' + goods.image} alt="cardImage"/>
       </div>
       <div class="cardName">
         {goods.name}

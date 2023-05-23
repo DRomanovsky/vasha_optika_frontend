@@ -15,7 +15,7 @@ const Services = observer(() => {
   })
 }, [])
   useEffect(() => {
-        fetchServices(services.selectedCategory.id, services.page, 2).then(data => {
+        fetchServices().then(data => {
             services.setServices(data.rows)
         })
     }, [services.selectedCategory])
