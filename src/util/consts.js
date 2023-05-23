@@ -1,0 +1,7 @@
+export const ADMIN_ROUTE = '/admin'
+export const LOGIN_ROUTE = '/adminlogin'
+export const CATALOG = '/catalog'
+export const ABOUT = '/about'
+export const CONTACTS = '/contacts'
+export const SERVICES = '/services'
+export const HOMEPAGE = '/home'
