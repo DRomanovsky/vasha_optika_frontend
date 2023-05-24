@@ -4,7 +4,8 @@ import { useContext, useEffect } from 'react'
 import { Context } from '../index'
 import { Row } from 'react-bootstrap'
 import { fetchServiceCategory, fetchServices } from '../http/servicesAPI'
-const ServicesList = () => {
+import { observer } from 'mobx-react-lite'
+const ServicesList = observer(() => {
   const {services} = useContext(Context)
   
   return (
@@ -17,6 +18,6 @@ const ServicesList = () => {
     </Row>
   </div>
   )
-}
+})
 
 export default ServicesList

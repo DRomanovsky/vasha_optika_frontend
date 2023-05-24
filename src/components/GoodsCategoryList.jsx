@@ -3,8 +3,8 @@ import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import {useContext} from 'react'
 import {Context} from '../index'
-
-const GoodsCategoryList = () => {
+import { observer } from 'mobx-react-lite';
+const GoodsCategoryList = observer(() => {
     const {goods} = useContext(Context)
     console.log(goods.selectedCategory)
   return (
@@ -21,6 +21,6 @@ const GoodsCategoryList = () => {
             )}
         </ListGroup>
   )
-}
+})
 
 export default GoodsCategoryList
