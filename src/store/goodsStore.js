@@ -19,7 +19,6 @@ export default class GoodsStore {
         this._goodsCategories = goodsCategories
     }
     setSelectedCategory(goodsCategory) {
-        this.setPage(1)
         this._selectedCategory = goodsCategory
     }
     setSelectedGood(selectedGood) {

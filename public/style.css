@@ -17,6 +17,9 @@ body {
     margin-bottom: 50px;
     min-height: 900px;
   }
+  .wrapper3{
+    min-height: auto;
+  }
   .header{
     padding: 0;
     background-color: black;
@@ -473,7 +476,6 @@ body {
   }
   .catalogLeft{
     width: 500px;
-    background-color: aliceblue;
   }
   .catalogRight{
     width: 1500px;
@@ -540,4 +542,15 @@ body {
   }
   .cardDesc{
     min-height: 125px;
+  }
+
+  .goodsAdmin, .servicesAdmin, .goodCategoriesAdmin, .serviceCategoriesAdmin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .mt-3{
+    width: 50%;
   }

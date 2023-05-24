@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contacts = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper wrapper3">
       <div class="cardHolder">
     <div class="itemCardContacts">
       <div class="cardName">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Button } from 'react-bootstrap'
 
 import CreateGood from '../../components/modal/create/CreateGood'
 import CreateGoodCategory from '../../components/modal/create/CreateGoodCategory'
@@ -21,29 +22,29 @@ const Adminpage = () => {
   const [goodDeleteVisible, setDeleteGoodVisible] = useState(false)
   return (
       <div class="wrapper">
-        <div class="Goods">
-          <h3>Товары</h3>
-          <button onClick={() => setGoodVisible (true)}>Добавить товар</button>
-          <button>Изменить товар</button>
-          <button onClick={() => setDeleteGoodVisible (true)}>Удалить товар</button>
+        <div class="goodsAdmin">
+          <h2>Товары</h2>
+          <Button className="mt-3" onClick={() => setGoodVisible (true)}>Добавить товар</Button>
+          <Button className="mt-3">Изменить товар</Button>
+          <Button className="mt-3" onClick={() => setDeleteGoodVisible (true)}>Удалить товар</Button>
         </div>
-        <div class="Services">
-          <h3>Услуги</h3>
-          <button onClick={() => setServiceVisible (true)}>Добавить услугу</button>
-          <button>Изменить услугу</button>
-          <button onClick={() => setDeleteServiceVisible (true)}>Удалить услугу</button>
+        <div class="servicesAdmin">
+          <h2>Услуги</h2>
+          <Button className="mt-3" onClick={() => setServiceVisible (true)}>Добавить услугу</Button>
+          <Button className="mt-3">Изменить услугу</Button>
+          <Button className="mt-3" onClick={() => setDeleteServiceVisible (true)}>Удалить услугу</Button>
         </div>
-        <div class="GoodCategories">
-          <h3>Категории товаров</h3>
-          <button onClick={() => setGoodCategoryVisible (true)}>Добавить категорию</button>
-          <button>Изменить категорию</button>
-          <button onClick={() => setDeleteGoodsCategoryVisible (true)}>Удалить категорию</button>
+        <div class="goodCategoriesAdmin">
+          <h2>Категории товаров</h2>
+          <Button className="mt-3" onClick={() => setGoodCategoryVisible (true)}>Добавить категорию</Button>
+          <Button className="mt-3">Изменить категорию</Button>
+          <Button className="mt-3" onClick={() => setDeleteGoodsCategoryVisible (true)}>Удалить категорию</Button>
         </div>
-        <div class="ServiceCategories">
-          <h3>Категории услуг</h3>
-          <button onClick={() => setServiceCategoryVisible (true)}>Добавить категорию</button>
-          <button>Изменить категорию</button>
-          <button onClick={() => setDeleteServiceCategoryVisible (true)}>Удалить категорию</button>
+        <div class="serviceCategoriesAdmin">
+          <h2>Категории услуг</h2>
+          <Button className="mt-3" onClick={() => setServiceCategoryVisible (true)}>Добавить категорию</Button>
+          <Button className="mt-3">Изменить категорию</Button>
+          <Button className="mt-3" onClick={() => setDeleteServiceCategoryVisible (true)}>Удалить категорию</Button>
         </div>
         <CreateGood show = {goodVisible} onHide={() => setGoodVisible (false)}></CreateGood>
         <CreateGoodCategory show = {goodCategoryVisible} onHide={() => setGoodCategoryVisible (false)}></CreateGoodCategory>
