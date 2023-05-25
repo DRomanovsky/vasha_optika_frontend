@@ -43,7 +43,7 @@ const Contacts = () => {
           Адрес
         </div>
         <div className="cas">
-          Ул. Урицкого, д. 24, пом. 59
+          Ул. Бородинская, д.22, пом.52
         </div>
       </div>
       <div>
@@ -51,7 +51,7 @@ const Contacts = () => {
           Телефон
         </div>
         <div className="cas">
-          8-965-910-92-62
+          8-953-593-86-96
         </div>
       </div>
       <div>
@@ -59,21 +59,21 @@ const Contacts = () => {
           Режим работы
         </div>
         <div className="cas">
-          Пн-Пт с 09:00-19:00<br/>
-          Сб-Вс с 09:00-18:00
+        Пн-Пт с 10:00-18:00<br/>
+        Сб-Вс с 10:00-17:00
         </div>
       </div>
     </div>
     <div className="itemCardContacts">
       <div className="cardName">
-        г. Канск
+        г. Тайшет
       </div>
       <div>
         <div className="fat">
           Адрес
         </div>
         <div className="cas">
-          Ул. Урицкого, д. 24, пом. 59
+        Ул. Транспортная, д.19
         </div>
       </div>
       <div>
@@ -81,7 +81,7 @@ const Contacts = () => {
           Телефон
         </div>
         <div className="cas">
-          8-965-910-92-62
+        8-964-212-15-58
         </div>
       </div>
       <div>
@@ -89,21 +89,21 @@ const Contacts = () => {
           Режим работы
         </div>
         <div className="cas">
-          Пн-Пт с 09:00-19:00<br/>
-          Сб-Вс с 09:00-18:00
+          Вт-Сб с 10:00-18:00<br/>
+          Вс с 10:00-15:00
         </div>
       </div>
     </div>
     <div className="itemCardContacts">
       <div className="cardName">
-        г. Канск
+      п. Абан
       </div>
       <div>
         <div className="fat">
           Адрес
         </div>
         <div className="cas">
-          Ул. Урицкого, д. 24, пом. 59
+        Ул. Советская, д.81
         </div>
       </div>
       <div>
@@ -111,7 +111,7 @@ const Contacts = () => {
           Телефон
         </div>
         <div className="cas">
-          8-965-910-92-62
+        8-950-407-65-01
         </div>
       </div>
       <div>
@@ -119,8 +119,8 @@ const Contacts = () => {
           Режим работы
         </div>
         <div className="cas">
-          Пн-Пт с 09:00-19:00<br/>
-          Сб-Вс с 09:00-18:00
+        Пн-Пт с 09:00-17:00<br/>
+        Сб с 09:00-15:00
         </div>
       </div>
     </div>

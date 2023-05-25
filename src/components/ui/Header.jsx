@@ -25,7 +25,7 @@ function Header() {
             Связь с нами:
           </div>
           <div className="textBlock">
-            +7(XXX)-XXX-XX-XX
+            +7(965)-910-92-62
           </div>
         </div>
         

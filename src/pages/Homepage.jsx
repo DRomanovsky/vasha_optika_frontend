@@ -18,8 +18,19 @@ import plus3 from '../assets/images/plus3.png'
 import plus4 from '../assets/images/plus4.png'
 import plus5 from '../assets/images/plus5.png'
 import imgleft from '../assets/images/imgleft.png'
-
-const Homepage = props => {
+import { useContext, useEffect } from 'react';
+import { Context } from '../index';
+import { fetchGoods } from '../http/goodsAPI';
+import { observer } from 'mobx-react-lite';
+import { Link } from 'react-router-dom';
+const Homepage = observer(() => {
+    const {goods} = useContext(Context)
+    useEffect(() => {
+        fetchGoods(null, 1, 8).then(data => {
+            goods.setGoods(data.rows.reverse())
+            goods.setTotalCount(data.count)
+          })  
+    }, []) 
   return (
     <div className="wrapper" >
       <div className="sliderac">
@@ -58,126 +69,23 @@ const Homepage = props => {
                 modules={[Navigation]}
                 className="swiperNewr"
             >
-                <SwiperSlide>
+                {goods.goodes.map((good) => 
+                    (<SwiperSlide>
                     <div className="item">
                         <div className="card">
                             <div className="cardpic">
-                                <img src={testimage} alt=""/>
+                                <img src={process.env.REACT_APP_API_URL + '/' + good.image} alt=""/>
                             </div>
                             <div className="cardname">
-                                <p>NEOLOOK N – 7961</p>
+                                <p>{good.name}</p>
                             </div>
                             <div className="cardbut">
-                                <button>Подробнее</button>
+                                <button><Link to="/catalog" >Подробнее</Link></button>
                             </div>
                         </div>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                        <div className="card">
-                            <div className="cardpic">
-                                <img src={testimage} alt=""/>
-                            </div>
-                            <div className="cardname">
-                                <p>NEOLOOK N – 7961</p>
-                            </div>
-                            <div className="cardbut">
-                                <button>Подробнее</button>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                            <div className="card">
-                                <div className="cardpic">
-                                    <img src={testimage} alt=""/>
-                                </div>
-                                <div className="cardname">
-                                    <p>NEOLOOK N – 7961</p>
-                                </div>
-                                <div className="cardbut">
-                                    <button>Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                            <div className="card">
-                                <div className="cardpic">
-                                    <img src={testimage} alt=""/>
-                                </div>
-                                <div className="cardname">
-                                    <p>NEOLOOK N – 7961</p>
-                                </div>
-                                <div className="cardbut">
-                                    <button>Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                        <div className="card">
-                            <div className="cardpic">
-                                <img src={testimage} alt=""/>
-                            </div>
-                            <div className="cardname">
-                                <p>NEOLOOK N – 7961</p>
-                            </div>
-                            <div className="cardbut">
-                                <button>Купить</button>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                            <div className="card">
-                                <div className="cardpic">
-                                    <img src={testimage} alt=""/>
-                                </div>
-                                <div className="cardname">
-                                    <p>NEOLOOK N – 7961</p>
-                                </div>
-                                <div className="cardbut">
-                                    <button>Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                            <div className="card">
-                                <div className="cardpic">
-                                    <img src={testimage} alt=""/>
-                                </div>
-                                <div className="cardname">
-                                    <p>NEOLOOK N – 7961</p>
-                                </div>
-                                <div className="cardbut">
-                                    <button>Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="item">
-                            <div className="card">
-                                <div className="cardpic">
-                                    <img src={testimage} alt=""/>
-                                </div>
-                                <div className="cardname">
-                                    <p>NEOLOOK N – 7961</p>
-                                </div>
-                                <div className="cardbut">
-                                    <button>Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                </SwiperSlide>
+                </SwiperSlide>)
+                )}
             </Swiper>
         </div>
         <h2>Наши преимущества</h2>
@@ -277,13 +185,8 @@ const Homepage = props => {
                 </div>
             </div>
         </div>
-        <h2>Остались вопросы?</h2>
-        <h2>Оставьте свои данные, и мы вам перезвоним</h2>
-        <center><button className="helpbut">
-                <p>Помощь</p>
-            </button></center>
     </div>
   )
-}
+})
 
 export default Homepage

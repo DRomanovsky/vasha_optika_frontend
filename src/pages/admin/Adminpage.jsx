@@ -11,6 +11,7 @@ import DeleteServiceCategory from '../../components/modal/delete/deleteServiceCa
 import DeleteGoodsCategory from '../../components/modal/delete/deleteGoodCategory'
 import DeleteGood from '../../components/modal/delete/deleteGood'
 import DeleteService from '../../components/modal/delete/deleteService'
+
 const Adminpage = () => {
   const [goodVisible, setGoodVisible] = useState(false)
   const [serviceVisible, setServiceVisible] = useState(false)

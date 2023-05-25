@@ -7,14 +7,17 @@ import { observer } from 'mobx-react-lite'
 
 const DeleteService = observer(({show, onHide}) => {
     const {services} = useContext(Context)
-    
 
     const delService = () => {
         deleteOneService(services.selectedService.id).then(() => {
             onHide()
         })
     }
+    // useEffect(() => {
+    //     fetchServices().then(data => {services.setServices(data)})
+    // })
 
+    console.log(services)
   return (
     <Modal
         show={show}
