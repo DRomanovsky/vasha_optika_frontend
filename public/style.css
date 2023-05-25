@@ -554,3 +554,13 @@ body {
   .mt-3{
     width: 50%;
   }
+  .tabsService{
+    height: 100%;
+  }
+  .nav{
+    --bs-nav-link-color: #000;
+    --bs-nav-link-hover-color: #cfc905;
+  }
+  .nav-tabs {
+    --bs-nav-tabs-link-active-bg: #FFF500;
+  }

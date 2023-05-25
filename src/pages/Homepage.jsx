@@ -21,7 +21,7 @@ import imgleft from '../assets/images/imgleft.png'
 
 const Homepage = props => {
   return (
-    <div className="wrapper">
+    <div className="wrapper" >
       <div className="sliderac">
       <Swiper
         style={{

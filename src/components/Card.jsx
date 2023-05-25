@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../assets/images/image 1.png'
 
 const Card = ({goods}) => {
   return (

@@ -3,8 +3,7 @@ import { useContext, useEffect } from 'react'
 import { Context } from '../index'
 import { observer } from 'mobx-react-lite'
 import { fetchServiceCategory, fetchServices } from '../http/servicesAPI'
-import ServicesList from '../components/ServicesList'
-
+import ServiceList from '../components/ServiceList'
 const Services = observer(() => {
   const {services} = useContext(Context)
 
@@ -15,11 +14,13 @@ const Services = observer(() => {
         fetchServices().then(data => {
             services.setServices(data.rows)
         })
-    }, [services.selectedCategory])
+    }, [])
   return (
     <div className="wrapper">
       <div className="services">
-        <ServicesList></ServicesList>
+        <ServiceList></ServiceList>
+      </div>
+      <div>
       </div>
     </div>
   )

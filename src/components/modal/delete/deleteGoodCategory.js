@@ -3,8 +3,9 @@ import { Button, Dropdown, Form } from 'react-bootstrap'
 import { useState, useEffect, useContext } from 'react'
 import { Context } from '../../../index'
 import { deleteOneGoodsCategory, fetchGoodsCategory } from '../../../http/goodsAPI'
+import { observer } from 'mobx-react-lite'
 
-const DeleteGoodsCategory = ({show, onHide}) => {
+const DeleteGoodsCategory = observer(({show, onHide}) => {
     const {goods} = useContext(Context)
     const delOneGoodsCategory = () => {
         deleteOneGoodsCategory(goods.selectedCategory.id).then(() => {onHide()})
@@ -49,6 +50,6 @@ const DeleteGoodsCategory = ({show, onHide}) => {
         </Modal.Footer>
     </Modal>
   )
-}
+})
 
 export default DeleteGoodsCategory

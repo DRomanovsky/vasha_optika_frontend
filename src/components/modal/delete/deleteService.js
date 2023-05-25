@@ -1,8 +1,8 @@
-import { Button, Dropdown, Form } from 'react-bootstrap'
+import { Button, Dropdown} from 'react-bootstrap'
 import Modal from 'react-bootstrap/Modal'
-import {useContext, useState, useEffect} from 'react'
+import {useContext, useEffect} from 'react'
 import {Context} from '../../../index'
-import { deleteOneService, fetchServices, fetchServiceCategory } from '../../../http/servicesAPI'
+import { deleteOneService, fetchServices } from '../../../http/servicesAPI'
 import { observer } from 'mobx-react-lite'
 
 const DeleteService = observer(({show, onHide}) => {
@@ -13,10 +13,9 @@ const DeleteService = observer(({show, onHide}) => {
             onHide()
         })
     }
-
     useEffect(() => {
-        // fetchServices({services}).then(data => services.setServices(data))
-        fetchServices({services}).then(data => services.setSelectedService(data))
+        //fetchServices({services}).then(data => services.setServices(data))
+        fetchServices(null).then(data => services.setServices(data))
     })
 
   return (
@@ -37,14 +36,14 @@ const DeleteService = observer(({show, onHide}) => {
                     {services.selectedService.name || "Выберите услугу"}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                            {services.services.map(service =>
+                            {services.services.map((service) => (
                                 <Dropdown.Item
                                     onClick={() => services.setSelectedService(service)}
                                     key={service.id}
                                 >
                                     {service.id} - {service.name} | Категория - {service.servicesCategoryId}
                                 </Dropdown.Item>
-                            )}
+                            ))}
                         </Dropdown.Menu>
             </Dropdown>
         </Modal.Body>

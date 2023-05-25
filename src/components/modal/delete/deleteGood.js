@@ -13,7 +13,7 @@ const DeleteGood = observer(({show, onHide}) => {
     }
 
     useEffect(() => {
-        fetchGoods().then(data => goods.setSelectedGood(data))
+        fetchGoods(null, null, null).then(data => goods.setGoods(data))
     })
 
   return (
@@ -36,7 +36,7 @@ const DeleteGood = observer(({show, onHide}) => {
                 <Dropdown.Menu>
                             {goods.goodes.map(good =>
                                 <Dropdown.Item
-                                    onClick={() => good.setSelectedGood(good)}
+                                    onClick={() => goods.setSelectedGood(good)}
                                     key={good.id}
                                 >
                                     {good.id} - {good.name} | Категория - {good.goodsCategoryId}
