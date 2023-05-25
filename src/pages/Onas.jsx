@@ -8,8 +8,8 @@ import onas6 from "../assets/images/onas6.png"
 const Onas = () => {
   return (
     <div className="wrapper">
-      <div class="blockHolder">
-        <div class="block" id="block1">
+      <div className="blockHolder">
+        <div className="block" id="block1">
           <p>
             <b>В "Нашей Оптике" доступны следующие виды услуг:</b>
           </p>
@@ -37,11 +37,11 @@ const Onas = () => {
             <li>продажа солнцезащитных очков.</li>
           </ul>
         </div>
-        <div class="holder">
-          <div class="img">
+        <div className="holder">
+          <div className="img">
             <img src={onas1} alt="onas1" />
           </div>
-          <div class="block">
+          <div className="block">
             <p>
               В наших салонах не просто продаются средства коррекции зрения, но
               и оказываются медицинские услуги по их подбору. Здесь Вы всегда
@@ -52,8 +52,8 @@ const Onas = () => {
             </p>
           </div>
         </div>
-        <div class="holder">
-          <div class="block">
+        <div className="holder">
+          <div className="block">
             <p>
               Подбор средств коррекции зрения выполняется только
               квалифицированными специалистами, имеющими большой опыт работы со
@@ -63,14 +63,14 @@ const Onas = () => {
               взыскательных клиентов.
             </p>
           </div>
-          <div class="img">
+          <div className="img">
             <img src={onas2} alt="onas2" />
           </div>
         </div>
-        <div class="blockSpec">
+        <div className="blockSpec">
           <p>Осуществляем деятельность с 2008 года.</p>
         </div>
-        <div class="gallery">
+        <div className="gallery">
           <img src={onas3} alt="onas3" />
           <img src={onas4} alt="onas4" />
           <img src={onas5} alt="onas5" />

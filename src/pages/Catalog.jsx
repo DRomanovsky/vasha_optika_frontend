@@ -24,12 +24,12 @@ const Catalog = observer(() => {
         })
     }, [goods.page, goods, goods.selectedCategory, ])
   return (
-    <div class="wrapper catalog">
-      <div class="catalogLeft">
+    <div className="wrapper catalog">
+      <div className="catalogLeft">
         <GoodsCategoryList></GoodsCategoryList>
       </div>
       <div className="catalogRight">
-        <h2>Категория</h2>
+        <h2>{goods.selectedCategory.name || "Все товары"}</h2>
         <div className="cardWrapper">
           <GoodsList></GoodsList>
         </div>

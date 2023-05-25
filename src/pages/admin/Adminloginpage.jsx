@@ -25,8 +25,8 @@ const Adminloginpage =  observer (() => {
     
   }
   return (
-      <div class="wrapper2">
-      <div class="loginform">
+      <div className="wrapper2">
+      <div className="loginform">
         <h3>Вход в аккаунт администратора</h3>
         <label htmlFor="username">Username</label>
         <input 

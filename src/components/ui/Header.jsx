@@ -9,37 +9,37 @@ function Header() {
   const {user} = useContext(Context)
 
   return (
-    <div class="header">
-    <div class="imgBlock">
+    <div className="header">
+    <div className="imgBlock">
       <img src={logo} alt="logo" />
     </div>
-    <div class="rightHeader">
-      <div class="linkBlock">
-        <div class="socMediaIcons">
-          <div class="socIcon">
+    <div className="rightHeader">
+      <div className="linkBlock">
+        <div className="socMediaIcons">
+          <div className="socIcon">
             <img src={vklink} alt="vk-link" />
           </div>
         </div>
-        <div class="textBlocks">
-          <div class="textBlock">
+        <div className="textBlocks">
+          <div className="textBlock">
             Связь с нами:
           </div>
-          <div class="textBlock">
+          <div className="textBlock">
             +7(XXX)-XXX-XX-XX
           </div>
         </div>
         
       </div>
-      <div class="lowerHeader">
-        <div class="nav">
+      <div className="lowerHeader">
+        <div className="nav">
           <ul>
-            <li><Link to="/"><a>Главная</a></Link></li>
-            <li><Link to="/catalog"><a>Каталог</a></Link></li>
-            <li><Link to="/services"><a>Услуги</a></Link></li>
-            <li><Link to="/contacts"><a>Контакты</a></Link></li>
-            <li><Link to="/about"><a>О нас</a></Link></li>
+            <li><Link to="/">Главная</Link></li>
+            <li><Link to="/catalog">Каталог</Link></li>
+            <li><Link to="/services">Услуги</Link></li>
+            <li><Link to="/contacts">Контакты</Link></li>
+            <li><Link to="/about">О нас</Link></li>
             {user._isAuth ? 
-            <li><Link to="/admin"><a>А-П</a></Link></li>
+            <li><Link to="/admin">А-П</Link></li>
             : ''}
           </ul>
         </div>

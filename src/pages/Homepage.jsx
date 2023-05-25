@@ -21,8 +21,8 @@ import imgleft from '../assets/images/imgleft.png'
 
 const Homepage = props => {
   return (
-    <div class="wrapper">
-      <div class="sliderac">
+    <div className="wrapper">
+      <div className="sliderac">
       <Swiper
         style={{
             "--swiper-navigation-color": "#FFF500",
@@ -49,7 +49,7 @@ const Homepage = props => {
       </Swiper>
         </div>
         <h2>Новые товары</h2>
-        <div class="slidernew">
+        <div className="slidernew">
                 <Swiper
                 slidesPerView={4}
                 centeredSlides={true}
@@ -59,120 +59,120 @@ const Homepage = props => {
                 className="swiperNewr"
             >
                 <SwiperSlide>
-                    <div class="item">
-                        <div class="card">
-                            <div class="cardpic">
+                    <div className="item">
+                        <div className="card">
+                            <div className="cardpic">
                                 <img src={testimage} alt=""/>
                             </div>
-                            <div class="cardname">
+                            <div className="cardname">
                                 <p>NEOLOOK N – 7961</p>
                             </div>
-                            <div class="cardbut">
+                            <div className="cardbut">
                                 <button>Подробнее</button>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                        <div class="card">
-                            <div class="cardpic">
+                    <div className="item">
+                        <div className="card">
+                            <div className="cardpic">
                                 <img src={testimage} alt=""/>
                             </div>
-                            <div class="cardname">
+                            <div className="cardname">
                                 <p>NEOLOOK N – 7961</p>
                             </div>
-                            <div class="cardbut">
+                            <div className="cardbut">
                                 <button>Подробнее</button>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                            <div class="card">
-                                <div class="cardpic">
+                    <div className="item">
+                            <div className="card">
+                                <div className="cardpic">
                                     <img src={testimage} alt=""/>
                                 </div>
-                                <div class="cardname">
+                                <div className="cardname">
                                     <p>NEOLOOK N – 7961</p>
                                 </div>
-                                <div class="cardbut">
+                                <div className="cardbut">
                                     <button>Купить</button>
                                 </div>
                             </div>
                         </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                            <div class="card">
-                                <div class="cardpic">
+                    <div className="item">
+                            <div className="card">
+                                <div className="cardpic">
                                     <img src={testimage} alt=""/>
                                 </div>
-                                <div class="cardname">
+                                <div className="cardname">
                                     <p>NEOLOOK N – 7961</p>
                                 </div>
-                                <div class="cardbut">
+                                <div className="cardbut">
                                     <button>Купить</button>
                                 </div>
                             </div>
                         </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                        <div class="card">
-                            <div class="cardpic">
+                    <div className="item">
+                        <div className="card">
+                            <div className="cardpic">
                                 <img src={testimage} alt=""/>
                             </div>
-                            <div class="cardname">
+                            <div className="cardname">
                                 <p>NEOLOOK N – 7961</p>
                             </div>
-                            <div class="cardbut">
+                            <div className="cardbut">
                                 <button>Купить</button>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                            <div class="card">
-                                <div class="cardpic">
+                    <div className="item">
+                            <div className="card">
+                                <div className="cardpic">
                                     <img src={testimage} alt=""/>
                                 </div>
-                                <div class="cardname">
+                                <div className="cardname">
                                     <p>NEOLOOK N – 7961</p>
                                 </div>
-                                <div class="cardbut">
+                                <div className="cardbut">
                                     <button>Купить</button>
                                 </div>
                             </div>
                         </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                            <div class="card">
-                                <div class="cardpic">
+                    <div className="item">
+                            <div className="card">
+                                <div className="cardpic">
                                     <img src={testimage} alt=""/>
                                 </div>
-                                <div class="cardname">
+                                <div className="cardname">
                                     <p>NEOLOOK N – 7961</p>
                                 </div>
-                                <div class="cardbut">
+                                <div className="cardbut">
                                     <button>Купить</button>
                                 </div>
                             </div>
                         </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="item">
-                            <div class="card">
-                                <div class="cardpic">
+                    <div className="item">
+                            <div className="card">
+                                <div className="cardpic">
                                     <img src={testimage} alt=""/>
                                 </div>
-                                <div class="cardname">
+                                <div className="cardname">
                                     <p>NEOLOOK N – 7961</p>
                                 </div>
-                                <div class="cardbut">
+                                <div className="cardbut">
                                     <button>Купить</button>
                                 </div>
                             </div>
@@ -181,54 +181,54 @@ const Homepage = props => {
             </Swiper>
         </div>
         <h2>Наши преимущества</h2>
-        <div class="pluses">
-            <div class="pluscard">
-                <div class="plusimg">
+        <div className="pluses">
+            <div className="pluscard">
+                <div className="plusimg">
                     <img src={plus1}alt=""/>
                 </div>
-                <div class="plustext">
+                <div className="plustext">
                     <p>Мы улучшаем наше качество обслуживания</p>
                 </div>
             </div>
-            <div class="pluscard">
-                <div class="plusimg">
+            <div className="pluscard">
+                <div className="plusimg">
                     <img src={plus2} alt=""/>
                 </div>
-                <div class="plustext">
+                <div className="plustext">
                     <p>У нас имеется квалифицированный врач-офтальмолог</p>
                 </div>
             </div>
-            <div class="pluscard">
-                <div class="plusimg">
+            <div className="pluscard">
+                <div className="plusimg">
                     <img src={plus3} alt=""/>
                 </div>
-                <div class="plustext">
+                <div className="plustext">
                     <p>Приобрести наши товары может каждый</p>
                 </div>
             </div>
-            <div class="pluscard">
-                <div class="plusimg">
+            <div className="pluscard">
+                <div className="plusimg">
                     <img src={plus4} alt=""/>
                 </div>
-                <div class="plustext">
+                <div className="plustext">
                     <p>Большой ассортимент товаров</p>
                 </div>
             </div>
-            <div class="pluscard">
-                <div class="plusimg">
+            <div className="pluscard">
+                <div className="plusimg">
                     <img src={plus5} alt=""/>
                 </div>
-                <div class="plustext">
+                <div className="plustext">
                     <p>Самые низкие цены во всем городе</p>
                 </div>
             </div>
         </div>
         <h2>О нас</h2>
-        <div class="onas">
-            <div class="onasimg">
+        <div className="onas">
+            <div className="onasimg">
                 <img src={imgleft} alt=""/>
             </div>
-            <div class="onastext">
+            <div className="onastext">
                 <p>В наших салонах не просто продаются средства коррекции зрения, но и оказываются медицинские услуги по
                     их подбору. Здесь Вы всегда сможете получить грамотную консультацию опытного сертифицированного
                     врача-офтальмолога. Наши специалисты постоянно совершенствуют свои знания, и готовы предложить своим
@@ -239,47 +239,47 @@ const Homepage = props => {
                     взыскательных клиентов.<br/>Осуществляем деятельность с 2008 года.</p>
             </div>
         </div>
-        <div class="otz">
-            <div class="otzcard">
-                <div class="otzstar">
+        <div className="otz">
+            <div className="otzcard">
+                <div className="otzstar">
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                 </div>
-                <div class="otztext">
+                <div className="otztext">
                     <p>Использую услуги в этот салон уже много лет без каких-либо проблем</p>
                 </div>
             </div>
-            <div class="otzcard">
-                <div class="otzstar">
+            <div className="otzcard">
+                <div className="otzstar">
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                 </div>
-                <div class="otztext">
+                <div className="otztext">
                     <p>Действительно самые дешевые товары во всем городе, купил уже несколько пар очков и линз</p>
                 </div>
             </div>
-            <div class="otzcard">
-                <div class="otzstar">
+            <div className="otzcard">
+                <div className="otzstar">
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                 </div>
-                <div class="otztext">
+                <div className="otztext">
                     <p>Лучший врач-офтольмолог во всём городе</p>
                 </div>
             </div>
         </div>
         <h2>Остались вопросы?</h2>
         <h2>Оставьте свои данные, и мы вам перезвоним</h2>
-        <center><button class="helpbut">
+        <center><button className="helpbut">
                 <p>Помощь</p>
             </button></center>
     </div>

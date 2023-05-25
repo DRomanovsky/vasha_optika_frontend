@@ -17,7 +17,7 @@ const Pages = observer(() => {
     <Pagination>
             {pages.map(page =>
                 <Pagination.Item
-                    style={{cursor: 'pointer'}}
+                    style={{cursor: 'pointer', backgroundColor: 'yellow'}}
                     active={goods.page === page}
                     onClick={() => goods.setPage(page)}
                     key={page}

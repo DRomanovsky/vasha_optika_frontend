@@ -8,6 +8,10 @@ export const fetchServiceCategory = async () =>{
     const {data} = await $host.get('api/serviceCategory')
     return data
 }
+export const fetchOneServiceCategory = async (id) =>{
+    const {data} = await $host.get('api/serviceCategory/' + id)
+    return data
+}
 export const deleteOneServiceCategory = async(id) =>{
     const {data} = await $authHost.delete('api/serviceCategory/delete/' + id)
     return data

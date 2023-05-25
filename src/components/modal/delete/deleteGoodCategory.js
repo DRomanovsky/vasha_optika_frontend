@@ -7,9 +7,7 @@ import { deleteOneGoodsCategory, fetchGoodsCategory } from '../../../http/goodsA
 const DeleteGoodsCategory = ({show, onHide}) => {
     const {goods} = useContext(Context)
     const delOneGoodsCategory = () => {
-        deleteOneGoodsCategory(goods.selectedCategory.id).then(() => {
-            onHide()
-        })
+        deleteOneGoodsCategory(goods.selectedCategory.id).then(() => {onHide()})
     }
     useEffect(() => {
         fetchGoodsCategory().then(data => goods.setGoodsCategory(data))

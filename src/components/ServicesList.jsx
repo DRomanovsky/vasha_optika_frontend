@@ -7,11 +7,11 @@ import { fetchServiceCategory, fetchServices } from '../http/servicesAPI'
 import { observer } from 'mobx-react-lite'
 const ServicesList = observer(() => {
   const {services} = useContext(Context)
-  
+
   return (
     
     <div>
-    <Row class="d-flex">
+    <Row className="d-flex">
         {services.servicesCategories.map(servicesCategory =>
                 <Service key={servicesCategory.id} servicesCategory={servicesCategory} services={services}/>
             )}

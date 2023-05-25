@@ -5,7 +5,7 @@ import { createServiceCategory } from '../../../http/servicesAPI'
 const CreateServiceCategory = ({show, onHide}) => {
     const [value, setValue] = useState('')
     const addServicesCategory = () => {
-        createServiceCategory({name:value}).then(data => {
+        createServiceCategory({name:value}).then(() => {
             setValue('')
             onHide()
         })

@@ -21,26 +21,26 @@ const Adminpage = () => {
   const [serviceDeleteVisible, setDeleteServiceVisible] = useState(false)
   const [goodDeleteVisible, setDeleteGoodVisible] = useState(false)
   return (
-      <div class="wrapper">
-        <div class="goodsAdmin">
+      <div className="wrapper">
+        <div className="goodsAdmin">
           <h2>Товары</h2>
           <Button className="mt-3" onClick={() => setGoodVisible (true)}>Добавить товар</Button>
           <Button className="mt-3">Изменить товар</Button>
           <Button className="mt-3" onClick={() => setDeleteGoodVisible (true)}>Удалить товар</Button>
         </div>
-        <div class="servicesAdmin">
+        <div className="servicesAdmin">
           <h2>Услуги</h2>
           <Button className="mt-3" onClick={() => setServiceVisible (true)}>Добавить услугу</Button>
           <Button className="mt-3">Изменить услугу</Button>
           <Button className="mt-3" onClick={() => setDeleteServiceVisible (true)}>Удалить услугу</Button>
         </div>
-        <div class="goodCategoriesAdmin">
+        <div className="goodCategoriesAdmin">
           <h2>Категории товаров</h2>
           <Button className="mt-3" onClick={() => setGoodCategoryVisible (true)}>Добавить категорию</Button>
           <Button className="mt-3">Изменить категорию</Button>
           <Button className="mt-3" onClick={() => setDeleteGoodsCategoryVisible (true)}>Удалить категорию</Button>
         </div>
-        <div class="serviceCategoriesAdmin">
+        <div className="serviceCategoriesAdmin">
           <h2>Категории услуг</h2>
           <Button className="mt-3" onClick={() => setServiceCategoryVisible (true)}>Добавить категорию</Button>
           <Button className="mt-3">Изменить категорию</Button>

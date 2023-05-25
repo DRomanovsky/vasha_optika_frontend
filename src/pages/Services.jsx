@@ -10,9 +10,6 @@ const Services = observer(() => {
 
   useEffect(() => {
     fetchServiceCategory().then(data => services.setServicesCategory(data))
-    fetchServices(null).then(data => {
-      services.setServices(data.rows)
-  })
 }, [])
   useEffect(() => {
         fetchServices().then(data => {

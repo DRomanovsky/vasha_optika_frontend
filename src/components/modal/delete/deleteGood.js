@@ -9,9 +9,7 @@ const DeleteGood = observer(({show, onHide}) => {
     const {goods} = useContext(Context)
     
     const delGood = () => {
-        deleteOneGoods(goods.selectedGood.id).then(() => {
-            onHide()
-        })
+        deleteOneGoods(goods.selectedGood.id).then(() => {onHide()})
     }
 
     useEffect(() => {

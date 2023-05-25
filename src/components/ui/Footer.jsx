@@ -5,38 +5,38 @@ import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div class="footer">
-    <div class="upperFooter">
-      <div class="footerImgBlock">
+    <div className="footer">
+    <div className="upperFooter">
+      <div className="footerImgBlock">
         <img src={logo} alt="logo" />
       </div>
-      <div class="menuBlock">
-        <ul>
-            <li><Link to="/"><a>Главная</a></Link></li>
-            <li><Link to="/"><a>Каталог</a></Link></li>
-            <li><Link to="/"><a>Услуги</a></Link></li>
-            <li><Link to="/contacts"><a>Контакты</a></Link></li>
-            <li><Link to="/about"><a>О нас</a></Link></li>
-        </ul>
+      <div className="menuBlock">
+      <ul>
+            <li><Link to="/">Главная</Link></li>
+            <li><Link to="/catalog">Каталог</Link></li>
+            <li><Link to="/services">Услуги</Link></li>
+            <li><Link to="/contacts">Контакты</Link></li>
+            <li><Link to="/about">О нас</Link></li>
+          </ul>
       </div>
-      <div class="linkBlock">
-        <div class="socMediaIcons">
-          <div class="socIcon">
+      <div className="linkBlock">
+        <div className="socMediaIcons">
+          <div className="socIcon">
             <img src={vklink} alt="vk-link" />
           </div>
         </div>
-        <div class="textBlocks">
-          <div class="textBlock">
+        <div className="textBlocks">
+          <div className="textBlock">
             Связь с нами:
           </div>
-          <div class="textBlock">
+          <div className="textBlock">
             +7(XXX)-XXX-XX-XX
           </div>
         </div>
         
       </div>
     </div>
-    <div class="lowerfooter">
+    <div className="lowerfooter">
       © “Ваша Оптика”  2008-2023
     </div>
   </div>
