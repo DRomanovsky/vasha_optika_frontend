@@ -4,16 +4,16 @@ import {Context} from "../index";
 import {Row} from "react-bootstrap";
 import Card from "./Card";
 
-const DeviceList = observer(() => {
+const GoodsList = observer(() => {
     const {goods} = useContext(Context)
-
+    
     return (
         <Row className="d-flex">
-            {goods.goodes.map(goods =>
-                <Card key={goods.id} goods={goods}/>
+            {goods.goodes.map(good =>
+                <Card key={good.id} goods={good}/>
             )}
         </Row>
     );
 });
 
-export default DeviceList;
+export default GoodsList;

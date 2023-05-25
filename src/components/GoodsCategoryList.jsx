@@ -1,12 +1,10 @@
 import React from 'react'
-import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import {useContext} from 'react'
 import {Context} from '../index'
 import { observer } from 'mobx-react-lite';
 const GoodsCategoryList = observer(() => {
     const {goods} = useContext(Context)
-    console.log(goods.selectedCategory)
   return (
     <ListGroup>
             {goods.goodsCategories.map(good =>

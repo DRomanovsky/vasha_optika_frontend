@@ -3,8 +3,9 @@ import { Button, Dropdown, Form } from 'react-bootstrap'
 import { useState, useEffect, useContext } from 'react'
 import { Context } from '../../../index'
 import { deleteOneServiceCategory, fetchServiceCategory } from '../../../http/servicesAPI'
+import { observer } from 'mobx-react-lite'
 
-const DeleteServiceCategory = ({show, onHide}) => {
+const DeleteServiceCategory = observer(({show, onHide}) => {
     const {services} = useContext(Context)
     
     const delOneServicesCategory = () => {
@@ -52,6 +53,6 @@ const DeleteServiceCategory = ({show, onHide}) => {
         </Modal.Footer>
     </Modal>
   )
-}
+})
 
 export default DeleteServiceCategory

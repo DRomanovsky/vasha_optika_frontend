@@ -24,7 +24,6 @@ export const fetchOneServices = async (id) =>{
     const {data} = await $host.get('api/service' + id)
     return data
 }
-
 export const deleteOneService = async(id) =>{
     const {data} = await $authHost.delete('api/service/delete/' + id)
     return data

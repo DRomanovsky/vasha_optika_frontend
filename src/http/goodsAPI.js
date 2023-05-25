@@ -16,8 +16,10 @@ export const createGoods = async (goods) =>{
     const {data} = await $authHost.post('api/good', goods)
     return data
 }
-export const fetchGoods = async () =>{
-    const {data} = await $host.get('api/good')
+export const fetchGoods = async (goodsCategoryId, page, limit) =>{
+    const {data} = await $host.get('api/good', {params: {
+        goodsCategoryId, page, limit
+    }})
     return data
 }
 export const fetchOneGoods = async (id) =>{
