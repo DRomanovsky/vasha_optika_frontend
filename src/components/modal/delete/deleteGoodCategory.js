@@ -7,6 +7,7 @@ import { observer } from 'mobx-react-lite'
 
 const DeleteGoodsCategory = observer(({show, onHide}) => {
     const {goods} = useContext(Context)
+    observer({goods})
     const delOneGoodsCategory = () => {
         deleteOneGoodsCategory(goods.selectedCategory.id).then(() => {onHide()})
     }
@@ -32,7 +33,7 @@ const DeleteGoodsCategory = observer(({show, onHide}) => {
                         {goods.selectedCategory.name || "Выберите категорию"}
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                                {goods.goodsCategories.map(goodsCategory =>
+                                {goods.goodsCategories.map((goodsCategory) =>
                                     <Dropdown.Item
                                         onClick={() => goods.setSelectedCategory(goodsCategory)}
                                         key={goodsCategory.id}

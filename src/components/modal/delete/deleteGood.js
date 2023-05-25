@@ -1,13 +1,12 @@
 import { Button, Dropdown, Form } from 'react-bootstrap'
 import Modal from 'react-bootstrap/Modal'
-import {useContext, useState, useEffect} from 'react'
+import {useContext, useEffect} from 'react'
 import {Context} from '../../../index'
-import { deleteOneGoods, fetchGoods, fetchGoodsCategory } from '../../../http/goodsAPI'
+import { deleteOneGoods, fetchGoods } from '../../../http/goodsAPI'
 import { observer } from 'mobx-react-lite'
 
-const DeleteGood = observer(({show, onHide}) => {
+const DeleteGood =observer(({show, onHide}) => {
     const {goods} = useContext(Context)
-    
     const delGood = () => {
         deleteOneGoods(goods.selectedGood.id).then(() => {onHide()})
     }

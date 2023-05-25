@@ -7,7 +7,6 @@ import { observer } from 'mobx-react-lite'
 
 const DeleteServiceCategory = observer(({show, onHide}) => {
     const {services} = useContext(Context)
-    
     const delOneServicesCategory = () => {
         deleteOneServiceCategory(services.selectedCategory.id).then(() => {
             onHide()

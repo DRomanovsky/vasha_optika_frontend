@@ -11,8 +11,7 @@ const CreateGood = observer(({show, onHide}) => {
     const [price, setPrice] = useState('')
     const [description, setDescription] = useState('')
     const [file, setFile] = useState(null)
-    const [goodsCategory, setGoodsCategory] = useState(null)
-
+    
     const addGood = () => {
         const formData = new FormData()
         formData.append ('name', name)

@@ -7,16 +7,13 @@ import { observer } from 'mobx-react-lite'
 
 const DeleteService = observer(({show, onHide}) => {
     const {services} = useContext(Context)
+    
 
     const delService = () => {
         deleteOneService(services.selectedService.id).then(() => {
             onHide()
         })
     }
-    useEffect(() => {
-        //fetchServices({services}).then(data => services.setServices(data))
-        fetchServices(null).then(data => services.setServices(data))
-    })
 
   return (
     <Modal
@@ -36,14 +33,14 @@ const DeleteService = observer(({show, onHide}) => {
                     {services.selectedService.name || "Выберите услугу"}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                            {services.services.map((service) => (
+                            {/* {services.services.map(service => (
                                 <Dropdown.Item
                                     onClick={() => services.setSelectedService(service)}
                                     key={service.id}
                                 >
                                     {service.id} - {service.name} | Категория - {service.servicesCategoryId}
                                 </Dropdown.Item>
-                            ))}
+                            ))} */}
                         </Dropdown.Menu>
             </Dropdown>
         </Modal.Body>
